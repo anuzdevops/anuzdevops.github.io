@@ -8,24 +8,18 @@
 </head>
 <body>
     <div class="container">
-        <h1>Happy Birthday, Tiffany!</h1>
-        <img src="tiffany-birthday.jpg" alt="Happy Birthday Tiffany!" class="birthday-image">
-        <p class="message">Wishing you a wonderful year ahead filled with happiness, love, and success!</p>
-        <button onclick="playSong()" class="play-button">Play Birthday Song 🎶</button>
-    </div>
+        <h1>🎉 Happy Birthday Tiffany! 🎉</h1>
 
-    <!-- Audio -->
-    <audio id="birthdaySong" src="birthday-song.mp3"></audio>
+        <div class="carousel">
+            <img id="carouselImage" src="images/image1.jpg" alt="Birthday Celebration">
+        </div>
 
-    <script>
-        function playSong() {
-            const song = document.getElementById("birthdaySong");
-            if (song.paused) {
-                song.play();
-            } else {
-                song.pause();
-            }
-        }
-    </script>
-</body>
-</html>
+        <div class="wishes">
+            <p>Wishing you all the happiness, love, and success on your special day! 🎂</p>
+            <p>May this birthday bring you endless joy and unforgettable moments! 🥳</p>
+            <p>Happy Birthday, Tiffany! Keep shining bright like the star you are! ✨</p>
+            <p>Cheers to many more wonderful years ahead filled with laughter and love! 🥂</p>
+        </div>
+
+        <button class="play-button" onclick="playSong()">Play Birthday Song 🎶</button>
+        <audio id="birthdaySong" src="birthday-song
