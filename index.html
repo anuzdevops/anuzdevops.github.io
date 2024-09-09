@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Tiffany!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Happy Birthday, Tiffany!</h1>
+        <img src="tiffany-birthday.jpg" alt="Happy Birthday Tiffany!" class="birthday-image">
+        <p class="message">Wishing you a wonderful year ahead filled with happiness, love, and success!</p>
+        <button onclick="playSong()" class="play-button">Play Birthday Song 🎶</button>
+    </div>
+
+    <!-- Audio -->
+    <audio id="birthdaySong" src="birthday-song.mp3"></audio>
+
+    <script>
+        function playSong() {
+            const song = document.getElementById("birthdaySong");
+            if (song.paused) {
+                song.play();
+            } else {
+                song.pause();
+            }
+        }
+    </script>
+</body>
+</html>
